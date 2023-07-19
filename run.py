@@ -30,7 +30,7 @@ def uploader():
             lines = f.readlines()
             for key, line in zip(data_keys, lines):
                 data_dict.update({key: line})
-                print(f"Data: {data_dict}")
+#                print(f"Data: {data_dict}")
             post(data_dict)
 
 
